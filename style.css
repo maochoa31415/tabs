@@ -1,0 +1,71 @@
+:root {
+    font-family: "Roboto", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+
+    color: #424242;
+}
+
+.main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.tabs {
+  --tab-border-width: 2px;
+  --tab-border-color: #424242;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.tabs .tabs-selectors {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.tabs .tabs-selectors .tab {
+  display: inline-flex;
+  justify-content: center;
+  padding: 6px 8px;
+  border-bottom: solid var(--tab-border-width) transparent;
+  list-style: none;
+  cursor: pointer;
+}
+
+.tabs .tabs-selectors .tab:not(.active) {
+  opacity: .6;
+}
+
+.tabs .tabs-selectors .tab.active {
+  border-bottom: solid var(--tab-border-width) var(--tab-border-color);
+}
+
+.tabs .tab-panels .tab-panel {
+  padding: 12px;
+}
+
+.tabs .tab-panels .tab-panel:not(.active) {
+  display: none;
+}
+
+.tabs {
+  width: 512px;
+}
+
+.extra-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+  background-color: #424242;
+  color: #fafafa;
+  border-radius: 12px;
+}
